@@ -1,5 +1,5 @@
 {
-  "name": "plantilla-visor-react",
+  "name": "fuentes-madrid",
   "version": "0.0.1",
   "description": "",
   "scripts": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geomatico/plantilla-visor-react.git"
+    "url": "git+https://github.com/martitasea/fuentes-madrid.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/geomatico/plantilla-visor-react/issues"
+    "url": "https://github.com/martitasea/fuentes-madrid/issues"
   },
-  "homepage": "https://labs.geomatico.es/plantilla-visor-react",
+  "homepage": "https://labs.martitasea.es/fuentes-madrid",
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.1",
