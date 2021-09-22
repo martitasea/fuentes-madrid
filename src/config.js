@@ -39,5 +39,20 @@ export const MAPSTYLES = [
 
 export const INITIAL_MAPSTYLE_URL = MAPSTYLES[1].url;
 
+export const SOURCES = {
+  'countries' : {
+    type: 'geojson',
+    data: 'carto/countries.geojson'
+  },
+  'countries-limits' : {
+    type: 'geojson',
+    data: 'carto/countries-limits.geojson'
+  },
+  'capitals' : {
+    type: 'geojson',
+    data: 'carto/capitals.geojson'
+  },
+};
+
 export const WIDESCREEN_STEP = '770px';
 export const DRAWER_WIDTH = '300px';

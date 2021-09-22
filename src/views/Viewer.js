@@ -5,7 +5,7 @@ import {useMediaQuery, Box} from '@material-ui/core';
 
 import {BaseMapList, ResponsiveHeader, SidePanel, Map} from '@geomatico/geocomponents';
 
-import {MAPSTYLES, WIDESCREEN_STEP, INITIAL_VIEWPORT, DRAWER_WIDTH, INITIAL_MAPSTYLE_URL} from '../config';
+import {MAPSTYLES, WIDESCREEN_STEP, INITIAL_VIEWPORT, DRAWER_WIDTH, INITIAL_MAPSTYLE_URL, SOURCES} from '../config';
 import Logo from '../components/icons/Logo';
 
 import SectionTitle from '../components/SectionTitle';
@@ -48,6 +48,28 @@ const App = () => {
       ...viewport
     });
   const handleClose = () => setIsSidePanelOpen(!isSidePanelOpen);
+
+  const layers =
+    [
+      {
+        'id': 'countries-areas',
+        'source': 'countries',
+        'type': 'fill',
+        'paint': {
+          'fill-color': '#973572',
+          'fill-opacity': 0.15
+        }
+      },
+      {
+        'id': 'countries-limits',
+        'source': 'countries-limits',
+        'type': 'line',
+        'paint': {
+          'line-color': '#973572',
+          'line-width': 5
+        }
+      }
+    ];
   return (
     <>
       <ResponsiveHeader
@@ -83,6 +105,8 @@ const App = () => {
           mapStyle={selectedStyleUrl}
           viewport={viewport}
           onViewportChange={onViewportChange}
+          sources={SOURCES}
+          layers={layers}
         />
       </main>
     </>
